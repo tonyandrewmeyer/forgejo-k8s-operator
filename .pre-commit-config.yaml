@@ -21,7 +21,7 @@ repos:
         additional_dependencies:
           - "ops[testing]~=3.7"
           - "cosl~=1.9"
-          - "cryptography~=48.0"
+          - "charmlibs-interfaces-tls-certificates~=1.12"
           - "pydantic~=2.13"
         pass_filenames: false
 

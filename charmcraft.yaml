@@ -87,8 +87,6 @@ charm-libs:
     version: "0"
   - lib: data_platform_libs.s3
     version: "0"
-  - lib: tls_certificates_interface.tls_certificates
-    version: "4"
 
 
 containers:

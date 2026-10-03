@@ -3,16 +3,18 @@
 #   uv pip compile - --python-version 3.12 -o requirements.txt <<< \
 #     "ops ~= 3.7
 #     cosl ~= 1.9
-#     cryptography ~= 48.0
+#     charmlibs-interfaces-tls-certificates ~= 1.12
 #     pydantic ~= 2.13"
 annotated-types==0.8.0
     # via pydantic
 cffi==2.1.0
     # via cryptography
+charmlibs-interfaces-tls-certificates==1.12.0
+    # via -r requirements.in
 cosl==1.10.2
     # via -r requirements.in
 cryptography==48.0.1
-    # via -r requirements.in
+    # via charmlibs-interfaces-tls-certificates
 diskcache==5.6.3
     # via cosl
 opentelemetry-api==1.44.0
@@ -20,12 +22,14 @@ opentelemetry-api==1.44.0
 ops==3.8.1
     # via
     #   -r requirements.in
+    #   charmlibs-interfaces-tls-certificates
     #   cosl
 pycparser==3.0
     # via cffi
 pydantic==2.13.4
     # via
     #   -r requirements.in
+    #   charmlibs-interfaces-tls-certificates
     #   cosl
 pydantic-core==2.46.4
     # via pydantic
