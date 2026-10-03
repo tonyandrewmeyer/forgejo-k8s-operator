@@ -4,7 +4,7 @@ import logging
 from typing import Optional
 
 import ops
-from charms.tls_certificates_interface.v4.tls_certificates import (
+from charmlibs.interfaces.tls_certificates import (
     Certificate,
     CertificateRequestAttributes,
     Mode,
